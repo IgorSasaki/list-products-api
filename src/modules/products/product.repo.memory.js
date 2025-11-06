@@ -17,7 +17,7 @@ export const makeProductRepoMemory = () => {
         const total = arr.length;
         const start = (page - 1) * limit;
         const paged = arr.slice(start, start + limit);
-        
+
         return { items: paged, page, limit, total };
     };
 
